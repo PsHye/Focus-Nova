@@ -7,11 +7,7 @@ public class Salida : MonoBehaviour
     public Transform posA;
     public Camera PlayerCamera;
     public Camera InteriorCamera;
-
-    void Start()
-    {
-    }
-
+    
     void OnTriggerEnter(Collider otro)
     {
         if (otro.tag == "Player")

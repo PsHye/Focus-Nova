@@ -14,8 +14,8 @@ public class globalvariables : MonoBehaviour
     public GameObject iluminationObjectinterior;
 
     //INVENTARIO*************
-    public static bool caja_de_arena_cristalizada = false;
-    public static bool plantita_con_escafandra = false;
+    public static bool cama = false;
+    public static bool flor = false;
     public static bool ilumination = false;
 
     //Variables Radio.
@@ -39,7 +39,7 @@ public class globalvariables : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(globalvariables.aireRestante.ToString());
+        //print(globalvariables.aireRestante.ToString());
         if (!zonaSegura)
         {
             aireRestante -= 0.01f;

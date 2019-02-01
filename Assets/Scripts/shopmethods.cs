@@ -10,7 +10,6 @@ public class shopmethods : MonoBehaviour
     public void Start() {
         Casco = 0;
         Botas = 0;
-
     }
     
     public void mejoraCasco() {
@@ -26,12 +25,9 @@ public class shopmethods : MonoBehaviour
             globalvariables.aireRestante = globalvariables.aireRestante + 20;
             
             Debug.Log("Aire = " + globalvariables.aireRestante);
-
-
-
-
         }
     }
+    
     /*public void mejoraBotas()
     {
         if (globalvariables.crystalCount > 40 * Botas * Botas && Botas < 5)
@@ -43,11 +39,7 @@ public class shopmethods : MonoBehaviour
             Debug.Log("CRISTALES: " + globalvariables.crystalCount);
             globalvariables.crystalCount = globalvariables.crystalCount - (40 * Botas * Botas);
             Debug.Log("CRISTALES: " + globalvariables.crystalCount);
-           
-
-            
-        }
-       
+         }
     }*/
 
 }
