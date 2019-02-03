@@ -85,8 +85,16 @@
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\PostProcessExample.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SpriteMask\SpriteMaskController.cs" />
     <Compile Include="Assets\Vfx\CambioLayerNoFunca\cambiarLayerCuarto.cs" />
-    <Compile Include="Assets\Vfx\Explosion\Scripts\Explosion.cs" />
-    <Compile Include="Assets\Vfx\Explosion\Scripts\SparkParticles.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\DecalDestroyer.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ExtinguishableFire.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\GunAim.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\GunShoot.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ParticleCollision.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ParticleExamples.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ParticleMenu.cs" />
+    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Vfx\Particulas\Explosion\Scripts\Explosion.cs" />
+    <Compile Include="Assets\Vfx\Particulas\Explosion\Scripts\SparkParticles.cs" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\LowPolyWater\Credits.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\Sprites-Default.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\ScreenSpaceDetail\ScreenSpaceDetail.shader" />
@@ -128,6 +136,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeFloatRGBAHlpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\ObjectNormalRefraction\ObjectNormalRefraction.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\UVLightReveal\UV light.shader" />
+    <None Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldToObjectTransfNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ObjSpaceViewDirHlpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\README SRP Samples.txt" />
