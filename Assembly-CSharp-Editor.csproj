@@ -748,7 +748,7 @@
       <HintPath>C:/Users/nikor/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="PackageManagerAssembly">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Assets/Vfx/Particulas/EffectExamplesParticulas/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
+      <HintPath>C:/Users/nikor/Documents/GitHub/Focus-Nova/Assets/Vfx/Particulas/EffectExamplesParticulas/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
