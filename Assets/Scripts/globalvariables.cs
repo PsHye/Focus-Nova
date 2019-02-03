@@ -25,15 +25,19 @@ public class globalvariables : MonoBehaviour
     //aire
     public static bool zonaSegura = false;
 
+    //public static globalvariables INS;
+
     // Start is called before the first frame update
     void Start()
     {
+        //INS = this;
         cajadeArenaobj.SetActive(false);
         plantitaobj.SetActive(false);
         iluminationObjectinterior.SetActive(false);
 
         crystalCount = 200;
         aireRestante = 40;
+        
     }
 
     // Update is called once per frame

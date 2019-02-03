@@ -14,7 +14,7 @@ public class Entrada : MonoBehaviour{
     public GameObject flor;
 
     [Header("Particulas")]
-    public Explosion pepe;
+    public Explosion scriptDeExplosion;
     public Transform insUno;
     public Transform insDos;
     public Transform insTres;
@@ -26,22 +26,22 @@ public class Entrada : MonoBehaviour{
         {
             if (globalvariables.cama) //si compramos estas cosas activarlas con las particulas
             {
-                pepe.transform.position = insUno.position;
-                pepe.Play();
+                scriptDeExplosion.transform.position = insUno.position;
+                scriptDeExplosion.Play();
                 cama.SetActive(true);
                 globalvariables.cama = false; //es esto o crear otro bool para preguntar si ya spawneo la particula
             }
             if (globalvariables.flor)
             {
-                pepe.transform.position = insDos.position;
-                pepe.Play();
+                scriptDeExplosion.transform.position = insDos.position;
+                scriptDeExplosion.Play();
                 flor.SetActive(true);
                 globalvariables.flor = false;
             }
             if (globalvariables.ilumination)
             {
-                pepe.transform.position = insTres.position;
-                pepe.Play();
+                scriptDeExplosion.transform.position = insTres.position;
+                scriptDeExplosion.Play();
                 lampara.SetActive(true);
                 globalvariables.ilumination = false;
             }
