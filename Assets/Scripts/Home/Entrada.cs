@@ -63,12 +63,12 @@ public class Entrada : MonoBehaviour{
             if (TiendaGlobal.INS.PiezaRadio1)
             {
                 radioGO1.SetActive(true);
-                TiendaGlobal.INS.ilumination = false;
+                TiendaGlobal.INS.PiezaRadio1 = false;
             }
             if (TiendaGlobal.INS.PiezaRadio2)
             {
                 radioGO2.SetActive(true);
-                TiendaGlobal.INS.ilumination = false;
+                TiendaGlobal.INS.PiezaRadio2 = false;
             }
             if (TiendaGlobal.INS.PiezaRadio3)
             {

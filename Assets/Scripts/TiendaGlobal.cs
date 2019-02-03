@@ -5,7 +5,7 @@ using UnityEngine;
 public class TiendaGlobal : MonoBehaviour
 {
 
-    //INVENTARIO*************
+    //Objetos
     [HideInInspector]
     public bool cama = false;
     [HideInInspector]
