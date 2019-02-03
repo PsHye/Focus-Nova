@@ -8,10 +8,14 @@ public class Entrada : MonoBehaviour{
     public Camera PlayerCamera;
     public Camera InteriorCamera;
 
-    [Header("Objetos")]
+    [Header("Objetos Casa")]
     public GameObject cama;
     public GameObject lampara;
     public GameObject flor;
+    public GameObject radioGO1;
+    public GameObject radioGO2;
+    public GameObject radioGO3;
+    public GameObject radioGO4;
 
     [Header("Particulas")]
     public Explosion scriptDeExplosion;
@@ -20,30 +24,57 @@ public class Entrada : MonoBehaviour{
     public Transform insTres;
     //public Transform insCuatro;
 
+    private void Start()
+    {
+        cama.SetActive(false);
+        lampara.SetActive(false);
+        flor.SetActive(false);
+        radioGO1.SetActive(false);
+        radioGO2.SetActive(false);
+        radioGO3.SetActive(false);
+        radioGO4.SetActive(false);
+    }
+
     void OnTriggerEnter(Collider otro)
     {
         if (otro.tag == "Player")
         {
-            if (globalvariables.cama) //si compramos estas cosas activarlas con las particulas
+            if (TiendaGlobal.INS.cama) //si compramos estas cosas activarlas con las particulas
             {
                 scriptDeExplosion.transform.position = insUno.position;
                 scriptDeExplosion.Play();
                 cama.SetActive(true);
-                globalvariables.cama = false; //es esto o crear otro bool para preguntar si ya spawneo la particula
+                TiendaGlobal.INS.cama = false; //es esto o crear otro bool para preguntar si ya spawneo la particula
             }
-            if (globalvariables.flor)
+            if (TiendaGlobal.INS.flor)
             {
                 scriptDeExplosion.transform.position = insDos.position;
                 scriptDeExplosion.Play();
                 flor.SetActive(true);
-                globalvariables.flor = false;
+                TiendaGlobal.INS.flor = false;
             }
-            if (globalvariables.ilumination)
+            if (TiendaGlobal.INS.ilumination)
             {
                 scriptDeExplosion.transform.position = insTres.position;
                 scriptDeExplosion.Play();
                 lampara.SetActive(true);
-                globalvariables.ilumination = false;
+                TiendaGlobal.INS.ilumination = false;
+            }
+            if (TiendaGlobal.INS.PiezaRadio1)
+            {
+                radioGO1.SetActive(true);
+                TiendaGlobal.INS.ilumination = false;
+            }
+            if (TiendaGlobal.INS.PiezaRadio2)
+            {
+                radioGO2.SetActive(true);
+                TiendaGlobal.INS.ilumination = false;
+            }
+            if (TiendaGlobal.INS.PiezaRadio3)
+            {
+                radioGO3.SetActive(true);
+                radioGO4.SetActive(true);
+                TiendaGlobal.INS.PiezaRadio3 = false;
             }
 
             globalvariables.zonaSegura = true;

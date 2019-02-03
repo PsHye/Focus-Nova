@@ -4870,7 +4870,11 @@ MonoBehaviour:
   cama: {fileID: 1439551568}
   lampara: {fileID: 1275819381}
   flor: {fileID: 1583821831}
-  pepe: {fileID: 1000498796}
+  radioGO1: {fileID: 6161681473981692209}
+  radioGO2: {fileID: 6161681473981692208}
+  radioGO3: {fileID: 6161681473981692210}
+  radioGO4: {fileID: 0}
+  scriptDeExplosion: {fileID: 1000498796}
   insUno: {fileID: 1050310434}
   insDos: {fileID: 1332866899}
   insTres: {fileID: 1815217734}
@@ -5895,8 +5899,8 @@ Transform:
   m_LocalPosition: {x: 1.9131303, y: 1.2042931, z: -0.84168243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1685846027}
   - {fileID: 596829061}
+  - {fileID: 1685846027}
   - {fileID: 1439551571}
   - {fileID: 1583821832}
   - {fileID: 1275819382}
@@ -7007,9 +7011,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crystalText: {fileID: 401545210}
   toxicityText: {fileID: 1195543197}
-  cajadeArenaobj: {fileID: 1439551568}
-  plantitaobj: {fileID: 1583821831}
-  iluminationObjectinterior: {fileID: 1275819381}
 --- !u!54 &1574827106
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10462,3 +10463,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 197fe85281cab4f409e3b943c0c00a83, type: 3}
+--- !u!1 &6161681473981692208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6161681475368912162, guid: 197fe85281cab4f409e3b943c0c00a83,
+    type: 3}
+  m_PrefabInstance: {fileID: 6161681473981692207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6161681473981692209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6161681475368912164, guid: 197fe85281cab4f409e3b943c0c00a83,
+    type: 3}
+  m_PrefabInstance: {fileID: 6161681473981692207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6161681473981692210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6161681475368912166, guid: 197fe85281cab4f409e3b943c0c00a83,
+    type: 3}
+  m_PrefabInstance: {fileID: 6161681473981692207}
+  m_PrefabAsset: {fileID: 0}

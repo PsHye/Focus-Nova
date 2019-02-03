@@ -10,11 +10,9 @@ public class globalvariables : MonoBehaviour
     public Text crystalText;
     public Text toxicityText;
     
-    /*public GameObject cajadeArenaobj;
-    public GameObject plantitaobj;
-    public GameObject iluminationObjectinterior;
     
-    //INVENTARIO*************
+    
+    /*//INVENTARIO*************
     public static bool cama = false;
     public static bool flor = false;
     public static bool ilumination = false;
@@ -23,20 +21,20 @@ public class globalvariables : MonoBehaviour
     public static bool PiezaRadio1 = false;     //mover todo esto a otro script global que se relacione con la tienda
     public static bool PiezaRadio2 = false;
     public static bool PiezaRadio3 = false;
+    
+    */
     //aire
     public static bool zonaSegura = false;
-
-    //public static globalvariables INS;
-    */
+    
 
     // Start is called before the first frame update
     void Start()
     {
         //INS = this;
-        cajadeArenaobj.SetActive(false);
+        /*cajadeArenaobj.SetActive(false);
         plantitaobj.SetActive(false);
         iluminationObjectinterior.SetActive(false);
-
+        */
         crystalCount = 200;
         aireRestante = 40;
         
