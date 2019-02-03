@@ -86,7 +86,6 @@
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SpriteMask\SpriteMaskController.cs" />
     <Compile Include="Assets\Vfx\CambioLayerNoFunca\cambiarLayerCuarto.cs" />
     <Compile Include="Assets\Vfx\Explosion\Scripts\Explosion.cs" />
-    <Compile Include="Assets\Vfx\Explosion\Scripts\instancePart.cs" />
     <Compile Include="Assets\Vfx\Explosion\Scripts\SparkParticles.cs" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\LowPolyWater\Credits.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\Sprites-Default.shader" />

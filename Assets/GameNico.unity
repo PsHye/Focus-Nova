@@ -887,6 +887,7 @@ GameObject:
   - component: {fileID: 74895918}
   - component: {fileID: 74895922}
   - component: {fileID: 74895923}
+  - component: {fileID: 74895924}
   m_Layer: 0
   m_Name: Factory
   m_TagString: factory
@@ -961,12 +962,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74895917}
   m_LocalRotation: {x: -1, y: 0.000000029802253, z: 0.00000086729733, w: 0.0000027275596}
-  m_LocalPosition: {x: 4.698, y: 0.34, z: -0.07}
+  m_LocalPosition: {x: 2.615221, y: 0.01710698, z: 0.15632528}
   m_LocalScale: {x: 0.9072001, y: 0.9072001, z: 0.9072001}
   m_Children:
   - {fileID: 424527288}
-  m_Father: {fileID: 803703328}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -180, y: -0.000015258789, z: -0.000015258789}
 --- !u!114 &74895922
 MonoBehaviour:
@@ -980,12 +981,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91d03a251afeec240adf2ee0bea08753, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parte1: {fileID: 0}
-  parte2: {fileID: 0}
+  parte1: {fileID: 2130535428}
+  parte2: {fileID: 1899147406}
   parte3: {fileID: 0}
-  cajadeArenaButton: {fileID: 0}
-  plantitaButton: {fileID: 0}
-  iluminationButton: {fileID: 0}
+  cajadeArenaButton: {fileID: 1296016475}
+  plantitaButton: {fileID: 992524171}
+  iluminationButton: {fileID: 1804112900}
 --- !u!65 &74895923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -999,6 +1000,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.38098848, y: 0.73491627, z: 0.47742537}
   m_Center: {x: 0.0016911634, y: -0.13868575, z: 0.1462799}
+--- !u!114 &74895924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74895917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4474a8d1f421fe849b16e8968e17e5e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cama: 0
+  flor: 0
+  ilumination: 0
+  PiezaRadio1: 0
+  PiezaRadio2: 0
+  PiezaRadio3: 0
 --- !u!1 &123063746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,7 +1241,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &173797626
 GameObject:
@@ -2230,7 +2249,7 @@ Transform:
   - {fileID: 608134744}
   - {fileID: 1925566967}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &358650459
 PrefabInstance:
@@ -4195,10 +4214,9 @@ Transform:
   m_Children:
   - {fileID: 644018689}
   - {fileID: 988552634}
-  - {fileID: 74895921}
   - {fileID: 1225734930}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &806856160
 GameObject:
@@ -4873,7 +4891,7 @@ MonoBehaviour:
   radioGO1: {fileID: 6161681473981692209}
   radioGO2: {fileID: 6161681473981692208}
   radioGO3: {fileID: 6161681473981692210}
-  radioGO4: {fileID: 0}
+  radioGO4: {fileID: 1522559380}
   scriptDeExplosion: {fileID: 1000498796}
   insUno: {fileID: 1050310434}
   insDos: {fileID: 1332866899}
@@ -5852,7 +5870,7 @@ Transform:
   - {fileID: 1431359784}
   - {fileID: 1701485632}
   m_Father: {fileID: 803703328}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1240093190
 GameObject:
@@ -5863,7 +5881,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240093192}
-  - component: {fileID: 1240093191}
   m_Layer: 0
   m_Name: _CosasInteriorNave
   m_TagString: Untagged
@@ -5871,23 +5888,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1240093191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1240093190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f218823cb2046f54586578cdfedc83d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pepe: {fileID: 1000498796}
-  insUno: {fileID: 1050310434}
-  insDos: {fileID: 1332866899}
-  insTres: {fileID: 0}
-  insCuatro: {fileID: 0}
 --- !u!4 &1240093192
 Transform:
   m_ObjectHideFlags: 0
@@ -6617,7 +6617,7 @@ Transform:
   - {fileID: 1000498797}
   - {fileID: 1963969359}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1522559380 stripped
 GameObject:
@@ -10461,7 +10461,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.33919585
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6161681474534738581, guid: 197fe85281cab4f409e3b943c0c00a83, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 197fe85281cab4f409e3b943c0c00a83, type: 3}
 --- !u!1 &6161681473981692208 stripped
 GameObject:
