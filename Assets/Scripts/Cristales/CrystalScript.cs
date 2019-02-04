@@ -14,47 +14,46 @@ public class CrystalScript : MonoBehaviour {
 
 	
 	void Start () {
-		
-	}
+        Fase1.SetActive(true);
+        Fase2.SetActive(false);
+        Fase3.SetActive(false);
+        Fase4.SetActive(false);
+    }
 	
-	// Update is called once per frame
 	void Update ()
 	{
+        switch(Cantidad)
+	    {
+		    case 160:
+                    Fase1.SetActive(true);
+                    /*Fase2.SetActive(false);
+                    Fase3.SetActive(false);
+                    Fase4.SetActive(false);*/
+                    break;
+		    case 120:
+                    Fase1.SetActive(false);
+                    Fase2.SetActive(true);
+                    /*Fase3.SetActive(false);
+                    Fase4.SetActive(false);*/
+            break;
+		    case 80:
+                    //Fase1.SetActive(false);
+                    Fase2.SetActive(false);
+                    Fase3.SetActive(true);
+                    //Fase4.SetActive(false);
 
-	switch(Cantidad)
-	{
-		case 160:
-                Fase1.SetActive(true);
-                Fase2.SetActive(false);
-                Fase3.SetActive(false);
-                Fase4.SetActive(false);
-                break;
-		case 120:
-                Fase1.SetActive(false);
-                Fase2.SetActive(true);
-                Fase3.SetActive(false);
-                Fase4.SetActive(false);
-        break;
-		case 80:
-                Fase1.SetActive(false);
-                Fase2.SetActive(false);
-                Fase3.SetActive(true);
-                Fase4.SetActive(false);
+            break;
+		    case 30:
+                    /*Fase1.SetActive(false);
+                    Fase2.SetActive(false);*/
+                    Fase3.SetActive(false);
+                    Fase4.SetActive(true);
 
-        break;
-		case 30:
-                Fase1.SetActive(false);
-                Fase2.SetActive(false);
-                Fase3.SetActive(false);
-                Fase4.SetActive(true);
-
-        break;
-		case 0:
-		Destroy(gameObject);
-		break;
+            break;
+		    case 0:
+		    Destroy(gameObject);
+		    break;
 		
-	}
-
-		
-	}
+	    }
+    }
 }
