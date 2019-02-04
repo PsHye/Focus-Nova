@@ -11,8 +11,6 @@ public class factorymethods : MonoBehaviour{
     public Button plantitaButton;
     public Button iluminationButton;
     
-
-
     void Update() {
             #region ComentarioNico
             /* 
@@ -59,9 +57,8 @@ public class factorymethods : MonoBehaviour{
 
         if (globalvariables.crystalCount > 1) //240)
         {
-            globalvariables.crystalCount -= 1; //240;           
-            //cajaArena.SetActive(true); //lo vamos a hacer en el momento de la particula - bran
-            globalvariables.cama = true;
+            globalvariables.crystalCount -= 1; //240;         
+            TiendaGlobal.INS.cama = true;
         }
     }
 
@@ -70,8 +67,7 @@ public class factorymethods : MonoBehaviour{
         if (globalvariables.crystalCount > 1) //240)
         {
             globalvariables.crystalCount -= 1; //240;
-            //flor.SetActive(true);
-            globalvariables.flor = true;
+            TiendaGlobal.INS.flor = true;
         }
     }
 
@@ -80,9 +76,7 @@ public class factorymethods : MonoBehaviour{
         if (globalvariables.crystalCount > 1) //240)
         {
             globalvariables.crystalCount -= 1; //240;
-            //globalvariables.caja_de_arena_cristalizada = true;
-            //lampara.SetActive(true);
-            globalvariables.ilumination = true;
+            TiendaGlobal.INS.flor = true;
         }
     }
 
@@ -91,8 +85,7 @@ public class factorymethods : MonoBehaviour{
         if (globalvariables.crystalCount > 1) //240)
         {
             globalvariables.crystalCount -= 1; //240;
-            //globalvariables.ilumination = true; //ESTO ES UN BOOLEANO EN GLOBAL VARIABLES
-            //y no lo queremos usar, queremos spawnear el objeto de una.
+            TiendaGlobal.INS.ilumination = true; //ESTO ES UN BOOLEANO EN GLOBAL VARIABLES
         }
     }
 
@@ -100,7 +93,7 @@ public class factorymethods : MonoBehaviour{
         if (globalvariables.crystalCount > 580)
         {
             globalvariables.crystalCount -= 580;
-            globalvariables.PiezaRadio1 = true;
+            TiendaGlobal.INS.PiezaRadio1 = true;
         }
         parte1.image.color = Color.green;
         parte2.image.color = Color.white;
@@ -108,12 +101,12 @@ public class factorymethods : MonoBehaviour{
 
     public void conditionparte2()
     {
-        if (globalvariables.PiezaRadio1 == true)
+        if (TiendaGlobal.INS.PiezaRadio1 == true)
         {
             if (globalvariables.crystalCount > 800)
             {
                 globalvariables.crystalCount -= 800;
-                globalvariables.PiezaRadio2 = true;
+                TiendaGlobal.INS.PiezaRadio2 = true;
 
             }
             parte2.image.color = Color.green;
@@ -123,12 +116,12 @@ public class factorymethods : MonoBehaviour{
 
     public void conditionparte3()
     {
-        if (globalvariables.PiezaRadio2 == true)
+        if (TiendaGlobal.INS.PiezaRadio2 == true)
         {
             if (globalvariables.crystalCount > 2000)
             {
                 globalvariables.crystalCount -= 2000;
-                globalvariables.PiezaRadio3 = true;
+                TiendaGlobal.INS.PiezaRadio3 = true;
 
             }
             parte3.image.color = Color.green;
