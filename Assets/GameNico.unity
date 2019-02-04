@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.2805714, g: 0.6132076, b: 0.48661917, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.07
+  m_FogDensity: 0.06
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -1662,7 +1662,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294958193}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &294958196
 Transform:
   m_ObjectHideFlags: 0
@@ -4843,12 +4843,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f4261da86670b59489171a18b76dbe62, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a8ff1931a9bf7e4ba082755039799be, type: 3}
---- !u!4 &959536692 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1252433227}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &965629682
 GameObject:
   m_ObjectHideFlags: 0
@@ -5404,7 +5398,7 @@ Transform:
   - {fileID: 1963969359}
   - {fileID: 1000498797}
   m_Father: {fileID: 1469004672}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089987489 stripped
 GameObject:
@@ -5981,63 +5975,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 877815726}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1252433227
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1469004672}
-    m_Modifications:
-    - target: {fileID: 198056, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_Name
-      value: fuegoNave
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.00047893822
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 429158, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1f2bc0fd10324694da25408e4cc94ce3, type: 3}
 --- !u!1 &1275819381 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 4f18f26fa6fd31e49bec9544783992ac,
@@ -6715,7 +6652,6 @@ Transform:
   m_LocalPosition: {x: -1.9231008, y: -0.1682736, z: 3.3459053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 959536692}
   - {fileID: 1084820371}
   - {fileID: 1720162330}
   - {fileID: 1811363696}
@@ -7044,7 +6980,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574827101}
   m_LocalRotation: {x: -0.0013877164, y: -0.99712193, z: 0.07342167, w: -0.018846028}
-  m_LocalPosition: {x: -0.43087304, y: 1.158978, z: 7.0613394}
+  m_LocalPosition: {x: 0.39, y: 1.158978, z: 7.0613394}
   m_LocalScale: {x: 1.8779376, y: 1.8779355, z: 1.8779372}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7928,11 +7864,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720162329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.565, y: 0.263, z: -2.598}
+  m_LocalPosition: {x: -0.565, y: 0.263, z: -0.767}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1469004672}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &1720162331
 ParticleSystemRenderer:
@@ -8012,14 +7948,14 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0
+    scalar: 0.2
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -8829,7 +8765,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 250
+      scalar: 350
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -9451,8 +9387,8 @@ ParticleSystem:
     x:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: -2
+      scalar: 0
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -9504,8 +9440,8 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: -4
+      scalar: 7
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -9557,8 +9493,8 @@ ParticleSystem:
     z:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 3
-      minScalar: 3
+      scalar: 0
+      minScalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -10424,7 +10360,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 1
-      minScalar: 0.8
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -12624,7 +12560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723756628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0864, y: -0.0038, z: 0.0842}
+  m_LocalPosition: {x: 0.0356, y: -0.0001, z: 0.132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 566620499}
@@ -12805,7 +12741,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 9.55
+  m_Radius: 11.76
   m_Center: {x: 4.08, y: -11.1, z: 15.4}
 --- !u!1 &1770240622 stripped
 GameObject:
@@ -13071,102 +13007,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &1799946092
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1799946083}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3e305c60319677a47bd561859bce4233, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!82 &1799946093
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13276,8 +13116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PicoA: {fileID: 1799946093}
-  PicoB: {fileID: 1799946092}
-  PicoC: {fileID: 1799946091}
+  PicoB: {fileID: 1799946091}
   Ronroneo: {fileID: 1799946090}
 --- !u!1 &1804112898
 GameObject:
@@ -13438,7 +13277,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1469004672}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!199 &1811363697
 ParticleSystemRenderer:
@@ -14975,8 +14814,8 @@ ParticleSystem:
     x:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.1
-      minScalar: -0.1
+      scalar: 0.2
+      minScalar: -0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -15028,7 +14867,7 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.1
+      scalar: 0.05
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -19314,19 +19153,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.97969794
-      objectReference: {fileID: 0}
-    - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
-      propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.08254693
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.20047946
+      value: -0.9965872
       objectReference: {fileID: 0}
     - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
       propertyPath: m_RootOrder
@@ -19338,7 +19177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 203.13
+      value: 369.47
       objectReference: {fileID: 0}
     - target: {fileID: 4787636323837086, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -19366,6 +19205,16 @@ PrefabInstance:
       propertyPath: Pico
       value: 
       objectReference: {fileID: 566620496}
+    - target: {fileID: 114710446966024126, guid: e09fb880adff5cc4895bbe3c16e508aa,
+        type: 3}
+      propertyPath: particulaAlTocarCristal
+      value: 
+      objectReference: {fileID: 1720162332}
+    - target: {fileID: 114710446966024126, guid: e09fb880adff5cc4895bbe3c16e508aa,
+        type: 3}
+      propertyPath: dondeSpawnearPart
+      value: 
+      objectReference: {fileID: 1723756629}
     - target: {fileID: 1242173447488502, guid: e09fb880adff5cc4895bbe3c16e508aa, type: 3}
       propertyPath: m_Layer
       value: 10

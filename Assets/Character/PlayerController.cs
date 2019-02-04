@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour {
 
 	[Header("Herramientas")]
 	public GameObject Pico;
-	float PicoDelay = 0;//Para que desactive el pico.
+	public float PicoDelay = 1f;//Para que desactive el pico.
 
 	
 	[Header("Controller")]
@@ -14,15 +14,18 @@ public class PlayerController : MonoBehaviour {
 	public float velocidadRotar;
     public bool inside;
 
-
-
+    [Header("Particula y donde spawnear")]
+    public ParticleSystem particulaAlTocarCristal;
+    public Transform dondeSpawnearPart;
+    
 	//Componentes
 	Animator anim;
 
-
-	void Start () 
+    void Start () 
 	{
-		anim = GetComponent<Animator>();		
+		anim = GetComponent<Animator>();
+        Pico.SetActive(false);
+        PicoDelay = Mathf.Clamp(0,0,1);
 	}
 	void Update () 
 	{
@@ -39,33 +42,43 @@ public class PlayerController : MonoBehaviour {
 			transform.Rotate(new Vector3(0, Horizontal, 0) * velocidadRotar);
 		}
 
-		
-		if(Pico.activeSelf)
+
+        /*if(Pico.activeSelf)
 		{
-			PicoDelay -= Time.deltaTime;
-		}
-		if(PicoDelay <= 0)
+			PicoDelay -= Time.deltaTime;  // De esta forma ahora solo te deja picar si respeta el delay del pico (1 seg)
+                                         // Antes entraba cada vez que tocabas space y spawneaba bocha de particulas
+                                        // - bran
+		}*/
+
+        if (PicoDelay >= 0)
 		{
-            Pico.SetActive(false);
+            PicoDelay -= Time.deltaTime; 
         }
 		else
 		{
-			Pico.SetActive(true);
-		}
+            Pico.SetActive(false);
+        }
 
     }
 
 	void OnTriggerStay(Collider otro)
 	{
-		if(otro.transform.tag == "crystal")
+		if(otro.transform.CompareTag("crystal"))
 		{
-			if(Input.GetKeyDown(KeyCode.Space))
+			if(Input.GetKeyDown(KeyCode.Space) && !Pico.activeSelf) //solo si esta desactivado podemos hacer todo esto - bran
 			{
+                //otro.transform.LookAt(transform.position);
+                //transform.LookAt(new Vector3(otro.transform.position.x, otro.transform.position.y, 0));
 
-					otro.GetComponent<CrystalScript>().Cantidad = otro.GetComponent<CrystalScript>().Cantidad - 10;
-					anim.SetTrigger("Picaso");	
-					PicoDelay = 1;
-                    globalvariables.crystalCount += 10;
+                Pico.SetActive(true);
+                otro.GetComponent<CrystalScript>().Cantidad -= 10;
+				anim.SetTrigger("Picaso");
+                
+                particulaAlTocarCristal.transform.position = dondeSpawnearPart.position; //Play de particulas
+                particulaAlTocarCristal.Play();    
+				PicoDelay = 1;
+
+                globalvariables.crystalCount += 10;
             }
 			
 		}

@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Character\cameraFollow.cs" />
     <Compile Include="Assets\Character\PlayerController.cs" />
+    <Compile Include="Assets\PlayParticulaHitCristal.cs" />
     <Compile Include="Assets\Scripts\Burbuja\Burbuja.cs" />
     <Compile Include="Assets\Scripts\Burbuja\SpawnSystem.cs" />
     <Compile Include="Assets\Scripts\Cristales\CrystalScript.cs" />
@@ -93,7 +94,6 @@
     <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\Vfx\Particulas\Explosion\ScriptsExplpsion\Explosion.cs" />
     <Compile Include="Assets\Vfx\Particulas\Explosion\ScriptsExplpsion\SparkParticles.cs" />
-    <Compile Include="Assets\Vfx\ScriptParticulasDeCristal.cs" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\LowPolyWater\Credits.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\Sprites-Default.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\ScreenSpaceDetail\ScreenSpaceDetail.shader" />

@@ -9,7 +9,6 @@ public class PlayerSoundSystem : MonoBehaviour {
 	[Header("Pico")]
 	public AudioSource PicoA;
 	public AudioSource PicoB;
-	public AudioSource PicoC;
 
 	[Header("Ronroneo")]
 	public AudioSource Ronroneo;
@@ -34,20 +33,17 @@ public class PlayerSoundSystem : MonoBehaviour {
 
 	void Picaso()
 	{
-		var azar = Random.Range(1,3);
+		var azar = Mathf.RoundToInt(Random.Range(1,3));
+        
+        print(azar);
 		if(azar == 1)
 		{
 			PicoA.Play();
 		}
 		if(azar == 2)
 		{
-			PicoB.Play();
-		}
-		if(azar == 3)
-		{
-			PicoC.Play();
-		}
-		
+            PicoB.Play();
+        }
 	}
 
 
