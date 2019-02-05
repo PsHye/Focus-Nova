@@ -84,7 +84,6 @@
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Smear\Smear.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\PostProcessExample.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SpriteMask\SpriteMaskController.cs" />
-    <Compile Include="Assets\Vfx\CambioLayerNoFunca\cambiarLayerCuarto.cs" />
     <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\GunAim.cs" />

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CrystalScript : MonoBehaviour {
 
-    // Use this for initialization
     public GameObject Fase1;
     public GameObject Fase2;
     public GameObject Fase3;
@@ -12,8 +11,10 @@ public class CrystalScript : MonoBehaviour {
 
     public int Cantidad = 160;
 
-	
-	void Start () {
+    [Header("Sistema de particulas a apagar")] // Por ahora esto va a ser asi ok? no me juzgues
+    public ParticleSystem particulaSystem;
+
+    void Start () {
         Fase1.SetActive(true);
         Fase2.SetActive(false);
         Fase3.SetActive(false);
@@ -26,32 +27,23 @@ public class CrystalScript : MonoBehaviour {
 	    {
 		    case 160:
                     Fase1.SetActive(true);
-                    /*Fase2.SetActive(false);
-                    Fase3.SetActive(false);
-                    Fase4.SetActive(false);*/
                     break;
 		    case 120:
                     Fase1.SetActive(false);
                     Fase2.SetActive(true);
-                    /*Fase3.SetActive(false);
-                    Fase4.SetActive(false);*/
             break;
 		    case 80:
-                    //Fase1.SetActive(false);
                     Fase2.SetActive(false);
                     Fase3.SetActive(true);
-                    //Fase4.SetActive(false);
-
             break;
 		    case 30:
-                    /*Fase1.SetActive(false);
-                    Fase2.SetActive(false);*/
                     Fase3.SetActive(false);
                     Fase4.SetActive(true);
-
             break;
 		    case 0:
-		    Destroy(gameObject);
+		        Destroy(gameObject);
+                particulaSystem.Stop();
+                
 		    break;
 		
 	    }

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 
     [Header("Particula y donde spawnear")]
     public ParticleSystem particulaAlTocarCristal;
+    public ParticleSystem particulaNumeroDeGolpe;
     public Transform dondeSpawnearPart;
     
 	//Componentes
@@ -67,16 +68,15 @@ public class PlayerController : MonoBehaviour {
 		{
 			if(Input.GetKeyDown(KeyCode.Space) && !Pico.activeSelf) //solo si esta desactivado podemos hacer todo esto - bran
 			{
-                //otro.transform.LookAt(transform.position);
-                //transform.LookAt(new Vector3(otro.transform.position.x, otro.transform.position.y, 0));
-
                 Pico.SetActive(true);
                 otro.GetComponent<CrystalScript>().Cantidad -= 10;
 				anim.SetTrigger("Picaso");
                 
-                particulaAlTocarCristal.transform.position = dondeSpawnearPart.position; //Play de particulas
-                particulaAlTocarCristal.Play();    
-				PicoDelay = 1;
+                particulaAlTocarCristal.transform.position = dondeSpawnearPart.position; //Play de particulas del golpe
+                particulaAlTocarCristal.Play();
+                particulaNumeroDeGolpe.transform.position = dondeSpawnearPart.position; //Play de particulas del numero del golpe
+                particulaNumeroDeGolpe.Play();
+                PicoDelay = 1;
 
                 globalvariables.crystalCount += 10;
             }
