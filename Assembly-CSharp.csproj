@@ -84,13 +84,6 @@
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Smear\Smear.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\PostProcessExample.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SpriteMask\SpriteMaskController.cs" />
-    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\DecalDestroyer.cs" />
-    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ExtinguishableFire.cs" />
-    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\GunAim.cs" />
-    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\GunShoot.cs" />
-    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ParticleCollision.cs" />
-    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ParticleExamples.cs" />
-    <Compile Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\Vfx\Particulas\Explosion\ScriptsExplpsion\Explosion.cs" />
     <Compile Include="Assets\Vfx\Particulas\Explosion\ScriptsExplpsion\SparkParticles.cs" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\LowPolyWater\Credits.txt" />
@@ -134,7 +127,6 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeFloatRGBAHlpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\ObjectNormalRefraction\ObjectNormalRefraction.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\UVLightReveal\UV light.shader" />
-    <None Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldToObjectTransfNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ObjSpaceViewDirHlpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\README SRP Samples.txt" />
@@ -334,6 +326,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TextureArrayNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeDepthNormalNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\UI\MaskedUI\MaskedUI.shader" />
+    <None Include="Assets\Vfx\Particulas\EffectExamples\Magic Effects\Shaders\Ice.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleTimeNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ToggleSwitchNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal02\StencilDiffuse02.shader" />

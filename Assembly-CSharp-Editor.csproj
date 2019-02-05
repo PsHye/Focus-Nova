@@ -478,7 +478,6 @@
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\Editor\Wires\WireBezierReference.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\Editor\Wires\WirePort.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\Editor\Wires\WireReference.cs" />
-    <None Include="Assets\Vfx\Particulas\EffectExamplesParticulas\Editor\PackageManagerAssembly\PackageImportList.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -742,9 +741,6 @@
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
-    <Reference Include="PackageManagerAssembly">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Assets/Vfx/Particulas/EffectExamplesParticulas/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
