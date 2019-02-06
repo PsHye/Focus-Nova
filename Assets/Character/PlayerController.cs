@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class PlayerController : MonoBehaviour {
 
@@ -17,10 +18,15 @@ public class PlayerController : MonoBehaviour {
     [Header("Particula y donde spawnear")]
     public ParticleSystem particulaAlTocarCristal;
     public ParticleSystem particulaNumeroDeGolpe;
+    public ParticleSystem particulaAtaqueCristal;
+
     public Transform dondeSpawnearPart;
+    public Transform prueba; // si ves esto es por que no lo borre, borralo
+                             // tmb borrar el gameobject Prueba que esta abajo del pico
     
-	//Componentes
-	Animator anim;
+
+    //Componentes
+    Animator anim;
 
     void Start () 
 	{
@@ -44,13 +50,6 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
-        /*if(Pico.activeSelf)
-		{
-			PicoDelay -= Time.deltaTime;  // De esta forma ahora solo te deja picar si respeta el delay del pico (1 seg)
-                                         // Antes entraba cada vez que tocabas space y spawneaba bocha de particulas
-                                        // - bran
-		}*/
-
         if (PicoDelay >= 0)
 		{
             PicoDelay -= Time.deltaTime; 
@@ -59,7 +58,13 @@ public class PlayerController : MonoBehaviour {
 		{
             Pico.SetActive(false);
         }
-
+        if (Input.GetKeyDown("space"))
+        {
+            particulaAtaqueCristal.transform.position = prueba.position;
+            particulaAtaqueCristal.transform.rotation = transform.rotation;
+            particulaAtaqueCristal.Play();
+            CameraShaker.Instance.ShakeOnce(4f, .2f, .1f, 1);
+        }
     }
 
 	void OnTriggerStay(Collider otro)
