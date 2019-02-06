@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using EZCameraShake;
 
 public class PlayerController : MonoBehaviour {
 
@@ -23,7 +22,12 @@ public class PlayerController : MonoBehaviour {
     public Transform dondeSpawnearPart;
     public Transform prueba; // si ves esto es por que no lo borre, borralo
                              // tmb borrar el gameobject Prueba que esta abajo del pico
-    
+    [Header("Camera Shake")]
+    public CamaraShakeBran camaraShake;
+    [Range(0, 0.5f)]
+    public float tiempoShake = 0.0f;
+    [Range(0, 0.2f)]
+    public float fuerzaShake = 0.0f;
 
     //Componentes
     Animator anim;
@@ -63,7 +67,7 @@ public class PlayerController : MonoBehaviour {
             particulaAtaqueCristal.transform.position = prueba.position;
             particulaAtaqueCristal.transform.rotation = transform.rotation;
             particulaAtaqueCristal.Play();
-            CameraShaker.Instance.ShakeOnce(4f, .2f, .1f, 1);
+            StartCoroutine(camaraShake.Shake(tiempoShake, fuerzaShake));
         }
     }
 
