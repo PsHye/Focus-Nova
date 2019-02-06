@@ -21,7 +21,7 @@ Material:
     m_TexEnvs:
     - _TextureSample0:
         m_Texture: {fileID: 2800000, guid: 11f03d9db1a617e40b7ece71f0a84f6f, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
     - _crystal_single_alpha:
         m_Texture: {fileID: 2800000, guid: c433f146553055e4abdc90414f6b5e22, type: 3}
@@ -32,19 +32,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AO: 0.6
-    - _ChromaticAberration: 0.1
+    - _AO: 0.7
+    - _ChromaticAberration: 0.189
     - _Distortion: 2.3
     - _Float0: 0.78
     - _Float1: 0.32
     - _Float2: 5
     - _Float3: 0.98
     - _Opacity: 0.9
-    - _TransAmbient: 0.2
+    - _TransAmbient: 0.289
     - _TransDirect: 1
-    - _TransNormalDistortion: 0.094
-    - _TransScattering: 2
-    - _TransShadow: 0.9
+    - _TransNormalDistortion: 0
+    - _TransScattering: 1
+    - _TransShadow: 1
     - _Translucency: 1
     - __dirty: 0
     m_Colors:
