@@ -7,6 +7,7 @@ public class Entrada : MonoBehaviour{
     public Transform posA;
     public Camera PlayerCamera;
     public Camera InteriorCamera;
+    public Camera CamaraSoloBloom;
 
     [Header("Objetos Casa")]
     public GameObject cama;
@@ -26,6 +27,7 @@ public class Entrada : MonoBehaviour{
 
     private void Start()
     {
+        CamaraSoloBloom.enabled = false;
         cama.SetActive(false);
         lampara.SetActive(false);
         flor.SetActive(false);
@@ -82,6 +84,7 @@ public class Entrada : MonoBehaviour{
             otro.transform.position = posA.position;
             PlayerCamera.enabled = false;
             InteriorCamera.enabled = true;
+            CamaraSoloBloom.enabled = true; // La camara del bloom siosi despues de la del interior asi llega a renderizar primero la de interior y DESPUES la del bloom
             otro.transform.GetComponent<PlayerController>().inside = true;
             InteriorCamera.GetComponent<AudioSource>().Play();
             PlayerCamera.GetComponent<AudioSource>().Stop();

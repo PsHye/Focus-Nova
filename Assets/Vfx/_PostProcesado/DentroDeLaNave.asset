@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: DentroDeLaNave
   m_EditorClassIdentifier: 
   settings:
-  - {fileID: 114983746201414192}
   - {fileID: 114713072136795400}
   - {fileID: 114888355894069936}
   - {fileID: 114460127082650204}
@@ -1405,50 +1404,3 @@ MonoBehaviour:
   lumContrib:
     overrideState: 1
     value: 0.8
---- !u!114 &114983746201414192
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a79b01ea5641d4aa6daa2e23605641, type: 3}
-  m_Name: Bloom
-  m_EditorClassIdentifier: 
-  active: 1
-  enabled:
-    overrideState: 1
-    value: 1
-  intensity:
-    overrideState: 1
-    value: 1.2
-  threshold:
-    overrideState: 1
-    value: 0.81
-  softKnee:
-    overrideState: 1
-    value: 0
-  clamp:
-    overrideState: 1
-    value: 65472
-  diffusion:
-    overrideState: 1
-    value: 6.3
-  anamorphicRatio:
-    overrideState: 1
-    value: -0.013
-  color:
-    overrideState: 1
-    value: {r: 1, g: 0.8187932, b: 0, a: 1}
-  fastMode:
-    overrideState: 1
-    value: 0
-  dirtTexture:
-    overrideState: 0
-    value: {fileID: 2800000, guid: 16d574e53541bba44a84052fa38778df, type: 3}
-    defaultState: 1
-  dirtIntensity:
-    overrideState: 0
-    value: 0.86

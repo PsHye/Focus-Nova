@@ -359,7 +359,6 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_UnpackScaleNormalNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TriplanarNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceLightDirHlpNode.shader" />
-    <None Include="Assets\Vfx\ShaderNievePrueba\ShaderNievePrueba.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Substance\Readme.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NodeMasking.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PosterizeNode.shader" />
