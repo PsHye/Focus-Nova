@@ -33,7 +33,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AO: 0.7
-    - _ChromaticAberration: 0.189
+    - _ChromaticAberration: 0.3
     - _Distortion: 2.3
     - _Float0: 0.78
     - _Float1: 0.32

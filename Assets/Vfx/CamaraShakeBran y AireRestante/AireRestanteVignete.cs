@@ -25,6 +25,10 @@ public class AireRestanteVignete : MonoBehaviour
         {
             m_Vignette.opacity.value = Mathf.Clamp(Mathf.Sin(Time.time * frecuencia), 0, .6f);
         }
+        else
+        {
+            m_Vignette.opacity.value = 0f;
+        }
         
         //m_Vignette.intensity.value = Mathf.Clamp(Mathf.Sin(Time.time * frecuencia) , 0, .35f);
         //m_Vignette.intensity.value = Mathf.Clamp(Mathf.Sin(Time.realtimeSinceStartup) * 3, 0, .35f);
