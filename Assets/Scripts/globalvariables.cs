@@ -5,17 +5,13 @@ using UnityEngine.UI;
 
 public class globalvariables : MonoBehaviour
 {
-    public static float aireRestante;//PASAR A INT POR CADA SEGUNDO QUE PASA
+    public static float aireRestante;
     public static int crystalCount;
     public Text crystalText;
     public Text toxicityText;
     
-    
-    //aire
     public static bool zonaSegura = false;
-    
 
-    // Start is called before the first frame update
     void Start()
     {
         

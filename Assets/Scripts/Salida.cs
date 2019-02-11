@@ -9,6 +9,7 @@ public class Salida : MonoBehaviour
     public Camera InteriorCamera;
     public Camera CamaraSoloBloom;
 
+
     void OnTriggerEnter(Collider otro)
     {
         if (otro.tag == "Player")
@@ -16,9 +17,11 @@ public class Salida : MonoBehaviour
             globalvariables.zonaSegura = false;
             
             otro.transform.position = posA.position;
-            PlayerCamera.enabled = true;
+            
             InteriorCamera.enabled = false;
             CamaraSoloBloom.enabled = false;
+            PlayerCamera.enabled = true;
+            InteriorCamera.GetComponent<CamaraInterior>().enabled = false;
             otro.transform.GetComponent<PlayerController>().inside = false;
             InteriorCamera.GetComponent<AudioSource>().Stop();
             PlayerCamera.GetComponent<AudioSource>().Play();

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using AuraAPI;
 
 public class Entrada : MonoBehaviour{
 
@@ -11,13 +12,13 @@ public class Entrada : MonoBehaviour{
 
     [Header("Objetos Casa")]
     public GameObject cama;
-    public GameObject lampara;
     public GameObject flor;
+    public GameObject lampara;
     public GameObject radioGO1;
     public GameObject radioGO2;
     public GameObject radioGO3;
     public GameObject radioGO4;
-
+    
     [Header("Particulas")]
     public Explosion scriptDeExplosion;
     public Transform insUno;
@@ -25,8 +26,11 @@ public class Entrada : MonoBehaviour{
     public Transform insTres;
     //public Transform insCuatro;
 
+    public AuraLight referenciaAuraLight;
+
     private void Start()
     {
+        
         CamaraSoloBloom.enabled = false;
         cama.SetActive(false);
         lampara.SetActive(false);
@@ -35,12 +39,15 @@ public class Entrada : MonoBehaviour{
         radioGO2.SetActive(false);
         radioGO3.SetActive(false);
         radioGO4.SetActive(false);
-    }
+        InteriorCamera.GetComponent<Aura>().enabled = true;
+        InteriorCamera.GetComponent<CamaraInterior>().enabled = false; //Desactivo este script hasta que entre el player a la nave...
+    }                                                               //..si no esta cam sigue al player por mas que este desactivada.
 
     void OnTriggerEnter(Collider otro)
     {
         if (otro.tag == "Player")
         {
+            
             if (TiendaGlobal.INS.cama) //si compramos estas cosas activarlas con las particulas
             {
                 scriptDeExplosion.transform.position = insUno.position;
@@ -78,10 +85,13 @@ public class Entrada : MonoBehaviour{
                 radioGO4.SetActive(true);
                 TiendaGlobal.INS.PiezaRadio3 = false;
             }
-
+            
             globalvariables.zonaSegura = true;
             
             otro.transform.position = posA.position;
+            
+            referenciaAuraLight.enabled = true;
+            InteriorCamera.GetComponent<CamaraInterior>().enabled = true;
             PlayerCamera.enabled = false;
             InteriorCamera.enabled = true;
             CamaraSoloBloom.enabled = true; // La camara del bloom siosi despues de la del interior asi llega a renderizar primero la de interior y DESPUES la del bloom

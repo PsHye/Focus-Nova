@@ -70,16 +70,7 @@ public class factorymethods : MonoBehaviour{
             TiendaGlobal.INS.flor = true;
         }
     }
-
-    public void lamparaMetodo()
-    {
-        if (globalvariables.crystalCount > 1) //240)
-        {
-            globalvariables.crystalCount -= 1; //240;
-            TiendaGlobal.INS.flor = true;
-        }
-    }
-
+    
     public void ilumination()
     {
         if (globalvariables.crystalCount > 1) //240)
@@ -90,9 +81,9 @@ public class factorymethods : MonoBehaviour{
     }
 
     public void conditionparte1() {
-        if (globalvariables.crystalCount > 580)
+        if (globalvariables.crystalCount > 1) //500
         {
-            globalvariables.crystalCount -= 580;
+            globalvariables.crystalCount -= 1;
             TiendaGlobal.INS.PiezaRadio1 = true;
         }
         parte1.image.color = Color.green;
@@ -101,14 +92,10 @@ public class factorymethods : MonoBehaviour{
 
     public void conditionparte2()
     {
-        if (TiendaGlobal.INS.PiezaRadio1 == true)
+        if (TiendaGlobal.INS.PiezaRadio1 && globalvariables.crystalCount > 2) //800
         {
-            if (globalvariables.crystalCount > 800)
-            {
-                globalvariables.crystalCount -= 800;
-                TiendaGlobal.INS.PiezaRadio2 = true;
-
-            }
+            globalvariables.crystalCount -= 1; //800
+            TiendaGlobal.INS.PiezaRadio2 = true;
             parte2.image.color = Color.green;
             parte3.image.color = Color.white;
         }
@@ -116,14 +103,10 @@ public class factorymethods : MonoBehaviour{
 
     public void conditionparte3()
     {
-        if (TiendaGlobal.INS.PiezaRadio2 == true)
+        if (TiendaGlobal.INS.PiezaRadio2 && globalvariables.crystalCount > 2) //2000
         {
-            if (globalvariables.crystalCount > 2000)
-            {
-                globalvariables.crystalCount -= 2000;
-                TiendaGlobal.INS.PiezaRadio3 = true;
-
-            }
+            globalvariables.crystalCount -= 2000;
+            TiendaGlobal.INS.PiezaRadio3 = true;
             parte3.image.color = Color.green;
         }  
     }

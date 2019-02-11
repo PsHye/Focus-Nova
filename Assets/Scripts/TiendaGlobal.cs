@@ -16,21 +16,15 @@ public class TiendaGlobal : MonoBehaviour
     //Variables Radio.
     [HideInInspector]
     public bool PiezaRadio1 = false;
-    [HideInInspector]                       //mover todo esto a otro script global que se relacione con la tienda
-    public bool PiezaRadio2 = false;       //hecho
+    [HideInInspector]                       
+    public bool PiezaRadio2 = false;       
     [HideInInspector]
     public bool PiezaRadio3 = false;
-
+    
     public static TiendaGlobal INS;
-
+    
     void Start()
     {
         INS = this;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

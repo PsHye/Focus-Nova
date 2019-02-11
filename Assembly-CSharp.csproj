@@ -126,7 +126,6 @@
     <Compile Include="Assets\Aura\Structs\VolumeTextureData.cs" />
     <Compile Include="Assets\Character\cameraFollow.cs" />
     <Compile Include="Assets\Character\PlayerController.cs" />
-    <Compile Include="Assets\PlayParticulaHitCristal.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\Burbuja\Burbuja.cs" />
