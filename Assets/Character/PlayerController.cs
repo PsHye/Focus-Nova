@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 		{
             Pico.SetActive(false);
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space")) //Como spawnear esta particula mas el shake de la camara, dejar aca hasta que temgamos al enemigo listo
         {
             particulaAtaqueCristal.transform.position = prueba.position;
             particulaAtaqueCristal.transform.rotation = transform.rotation;

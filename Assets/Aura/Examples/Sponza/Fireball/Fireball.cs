@@ -19,10 +19,10 @@ public class Fireball : MonoBehaviour
         _emitter.GetParticles(particles);
         for(int i = 0; i < particles.Length; ++i)
         {
-            particles[i].size = curve.Evaluate(1.0f - particles[i].remainingLifetime / particles[i].startLifetime) * _emitter.startSize;
-            particleColor = particles[i].color;
-            particleColor.a = i / (float)_emitter.maxParticles % 1;
-            particles[i].color = particleColor;
+            particles[i].startSize = curve.Evaluate(1.0f - particles[i].remainingLifetime / particles[i].startLifetime) * _emitter.startSize;
+            particleColor = particles[i].startColor;
+            particleColor.a = i / (float)_emitter.main.maxParticles % 1;
+            particles[i].startColor = particleColor;
             particles[i].rotation += (particleColor.a > 0.5f ? 1 : -1) * rotationSpeed * Time.deltaTime / particles[i].startLifetime;
         }
 

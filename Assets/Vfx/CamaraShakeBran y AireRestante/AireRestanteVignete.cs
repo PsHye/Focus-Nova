@@ -25,7 +25,7 @@ public class AireRestanteVignete : MonoBehaviour
         {
             m_Vignette.opacity.value = Mathf.Clamp(Mathf.Sin(Time.time * frecuencia), 0, .6f);
         }
-        else
+        else //cuando aire restante vuelva a 40 necesitamos reiniciar el valor de viñeta
         {
             m_Vignette.opacity.value = 0f;
         }
