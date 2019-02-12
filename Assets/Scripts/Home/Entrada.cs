@@ -27,6 +27,7 @@ public class Entrada : MonoBehaviour{
     //public Transform insCuatro;
 
     public AuraLight referenciaAuraLight;
+    public GameObject cosasInteriorNave; //Esto va a estar todo desactivado al principio para reducir drawCalls y los batches MUCHISIMO, y los fps nos lo agradecen
 
     private void Start()
     {
@@ -47,7 +48,7 @@ public class Entrada : MonoBehaviour{
     {
         if (otro.transform.CompareTag("Player"))
         {
-            
+            cosasInteriorNave.SetActive(true); 
             if (TiendaGlobal.INS.cama) //si compramos estas cosas activarlas con las particulas
             {
                 scriptDeExplosion.transform.position = insUno.position;

@@ -8,12 +8,14 @@ public class Salida : MonoBehaviour
     public Camera PlayerCamera;
     public Camera InteriorCamera;
     public Camera CamaraSoloBloom;
+    public GameObject cosasInteriorNave;
 
 
     void OnTriggerEnter(Collider otro)
     {
-        if (otro.tag == "Player")
+        if (otro.transform.CompareTag("Player"))
         {
+            cosasInteriorNave.SetActive(true);
             globalvariables.zonaSegura = false;
             
             otro.transform.position = posA.position;

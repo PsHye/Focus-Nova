@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: a93001c707f37844f88effc051d82891, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -20,8 +20,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _TextureSample0:
-        m_Texture: {fileID: 2800000, guid: 11f03d9db1a617e40b7ece71f0a84f6f, type: 3}
-        m_Scale: {x: 0.5, y: 0.5}
+        m_Texture: {fileID: 2800000, guid: 78e71b9e097c52e4cba00d81ed4dbe74, type: 3}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _crystal_single_alpha:
         m_Texture: {fileID: 2800000, guid: c433f146553055e4abdc90414f6b5e22, type: 3}
@@ -32,21 +32,21 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AO: 0.7
-    - _ChromaticAberration: 0.3
-    - _Distortion: 2.3
+    - _AO: 0.41
+    - _ChromaticAberration: 0.114
+    - _Distortion: 1.13
     - _Float0: 0.78
     - _Float1: 0.32
-    - _Float2: 5
+    - _Float2: 0.73
     - _Float3: 0.98
-    - _Opacity: 0.9
+    - _Opacity: 0.6
     - _TransAmbient: 0.289
-    - _TransDirect: 1
-    - _TransNormalDistortion: 0
+    - _TransDirect: 0.821
+    - _TransNormalDistortion: 0.804
     - _TransScattering: 1
     - _TransShadow: 1
     - _Translucency: 1
     - __dirty: 0
     m_Colors:
-    - _Color0: {r: 0, g: 0.065895036, b: 1, a: 1}
+    - _Color0: {r: 0, g: 0.31300902, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 0.7536868, a: 1}

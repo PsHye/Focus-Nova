@@ -48,7 +48,7 @@ public class menuFunc : MonoBehaviour
                 Shop.SetActive(!isActive);
                 isActive = !isActive;
                 if (isActive == true)
-                {
+                { 
                     puedeMoverse = false;
                 }
                 else {

@@ -20,8 +20,8 @@ public class PlayerController : MonoBehaviour {
     public ParticleSystem particulaAtaqueCristal;
 
     public Transform dondeSpawnearPart;
-    public Transform prueba; // si ves esto es por que no lo borre, borralo
-                             // tmb borrar el gameobject Prueba que esta abajo del pico
+    public Transform prueba; //aca es donde se va a spawnear la part
+
     [Header("Camera Shake")]
     public CamaraShakeBran camaraShake;
     [Range(0, 0.5f)]
@@ -52,7 +52,6 @@ public class PlayerController : MonoBehaviour {
 		{
 			transform.Rotate(new Vector3(0, Horizontal, 0) * velocidadRotar);
 		}
-
 
         if (PicoDelay >= 0)
 		{
@@ -86,10 +85,9 @@ public class PlayerController : MonoBehaviour {
                 particulaNumeroDeGolpe.transform.position = dondeSpawnearPart.position; //Play de particulas del numero del golpe
                 particulaNumeroDeGolpe.Play();
                 PicoDelay = 1;
-
+                //dasdasd
                 globalvariables.crystalCount += 10;
             }
-			
 		}
 	}
 }

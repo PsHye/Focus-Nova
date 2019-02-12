@@ -1,14 +1,22 @@
 fileFormatVersion: 2
-guid: 9a8ff1931a9bf7e4ba082755039799be
+guid: dbb557a2808c9ce499e1d69fa496a999
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: Material
-    2300000: //RootNode
-    3300000: //RootNode
+    100000: Camera
+    100002: Cube.007
+    100004: Lamp
+    100006: //RootNode
+    400000: Camera
+    400002: Cube.007
+    400004: Lamp
+    400006: //RootNode
+    2000000: Camera
+    2100000: Material.001
+    2300000: Cube.007
+    3300000: Cube.007
     4300000: Cube.007
+    10800000: Lamp
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -46,8 +54,8 @@ ModelImporter:
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
