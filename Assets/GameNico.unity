@@ -935,12 +935,11 @@ GameObject:
   - component: {fileID: 74895920}
   - component: {fileID: 74895919}
   - component: {fileID: 74895918}
-  - component: {fileID: 74895922}
   - component: {fileID: 74895923}
   - component: {fileID: 74895924}
   m_Layer: 0
   m_Name: Factory
-  m_TagString: factory
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1019,24 +1018,6 @@ Transform:
   m_Father: {fileID: 803703328}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -180, y: -0.000015258789, z: -0.000015258789}
---- !u!114 &74895922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 74895917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91d03a251afeec240adf2ee0bea08753, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parte1: {fileID: 2130535428}
-  parte2: {fileID: 1899147406}
-  parte3: {fileID: 0}
-  cajadeArenaButton: {fileID: 1296016475}
-  plantitaButton: {fileID: 992524171}
-  iluminationButton: {fileID: 1804112900}
 --- !u!65 &74895923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6029,7 +6010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170076733}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -1.15, y: 3, z: 0}
+  m_LocalPosition: {x: -1.15, y: 2.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6230,8 +6211,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215296851}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.25, y: 7.6, z: -0.6700001}
-  m_LocalScale: {x: 54.02563, y: 16.788465, z: 54.02563}
+  m_LocalPosition: {x: -0.25, y: 1.58, z: -0.6700001}
+  m_LocalScale: {x: 54.02563, y: 3.0087006, z: 54.02563}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -6624,11 +6605,10 @@ GameObject:
   m_Component:
   - component: {fileID: 294958196}
   - component: {fileID: 294958194}
-  - component: {fileID: 294958195}
   - component: {fileID: 294958198}
   - component: {fileID: 294958200}
-  - component: {fileID: 294958197}
   - component: {fileID: 294958199}
+  - component: {fileID: 294958197}
   - component: {fileID: 294958201}
   m_Layer: 9
   m_Name: Camarainterior
@@ -6679,14 +6659,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &294958195
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294958193}
-  m_Enabled: 0
 --- !u!4 &294958196
 Transform:
   m_ObjectHideFlags: 0
@@ -7964,6 +7936,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459977751}
   m_CullTransparentMesh: 0
+--- !u!1 &462154055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 462154056}
+  - component: {fileID: 462154057}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: factory
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &462154056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462154055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.24, y: 2.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 424527288}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &462154057
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462154055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.59
+  m_Height: 3.6221015
+  m_Direction: 1
+  m_Center: {x: 0.66, y: -0.063382305, z: -0.3925174}
 --- !u!1 &480477789
 GameObject:
   m_ObjectHideFlags: 0
@@ -9435,7 +9452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &715542554
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13137,7 +13154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &988552631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15231,9 +15248,9 @@ GameObject:
   - component: {fileID: 1574827103}
   - component: {fileID: 1574827109}
   - component: {fileID: 1574827106}
+  - component: {fileID: 1574827108}
   - component: {fileID: 1574827105}
   - component: {fileID: 1574827107}
-  - component: {fileID: 1574827108}
   - component: {fileID: 1574827110}
   m_Layer: 8
   m_Name: CamaraExterior

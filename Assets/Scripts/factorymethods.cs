@@ -59,6 +59,7 @@ public class factorymethods : MonoBehaviour{
         {
             globalvariables.crystalCount -= 1; //240;         
             TiendaGlobal.INS.cama = true;
+            cajadeArenaButton.gameObject.GetComponent<Button>().enabled = false;
         }
     }
 
@@ -68,6 +69,7 @@ public class factorymethods : MonoBehaviour{
         {
             globalvariables.crystalCount -= 1; //240;
             TiendaGlobal.INS.flor = true;
+            plantitaButton.gameObject.GetComponent<Button>().enabled = false;
         }
     }
     
@@ -77,6 +79,7 @@ public class factorymethods : MonoBehaviour{
         {
             globalvariables.crystalCount -= 1; //240;
             TiendaGlobal.INS.ilumination = true; //ESTO ES UN BOOLEANO EN GLOBAL VARIABLES
+            iluminationButton.gameObject.GetComponent<Button>().enabled = false;
         }
     }
 
@@ -85,6 +88,7 @@ public class factorymethods : MonoBehaviour{
         {
             globalvariables.crystalCount -= 1;
             TiendaGlobal.INS.PiezaRadio1 = true;
+            parte1.gameObject.GetComponent<Button>().enabled = false;
         }
         parte1.image.color = Color.green;
         parte2.image.color = Color.white;
@@ -98,6 +102,7 @@ public class factorymethods : MonoBehaviour{
             TiendaGlobal.INS.PiezaRadio2 = true;
             parte2.image.color = Color.green;
             parte3.image.color = Color.white;
+            parte2.gameObject.GetComponent<Button>().enabled = false;
         }
     }
 
@@ -108,6 +113,7 @@ public class factorymethods : MonoBehaviour{
             globalvariables.crystalCount -= 2000;
             TiendaGlobal.INS.PiezaRadio3 = true;
             parte3.image.color = Color.green;
+            parte3.gameObject.GetComponent<Button>().enabled = false;
         }  
     }
 }

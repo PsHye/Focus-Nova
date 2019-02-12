@@ -45,7 +45,7 @@ public class Entrada : MonoBehaviour{
 
     void OnTriggerEnter(Collider otro)
     {
-        if (otro.tag == "Player")
+        if (otro.transform.CompareTag("Player"))
         {
             
             if (TiendaGlobal.INS.cama) //si compramos estas cosas activarlas con las particulas

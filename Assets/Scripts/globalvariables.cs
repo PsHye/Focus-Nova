@@ -14,16 +14,13 @@ public class globalvariables : MonoBehaviour
 
     void Start()
     {
-        
         crystalCount = 200;
         aireRestante = 40;
-        
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        //print(globalvariables.aireRestante.ToString());
         if (!zonaSegura)
         {
             aireRestante -= 0.01f;
