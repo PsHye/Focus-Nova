@@ -15,15 +15,12 @@ public class Salida : MonoBehaviour
     {
         if (otro.transform.CompareTag("Player"))
         {
-            cosasInteriorNave.SetActive(true);
+            cosasInteriorNave.SetActive(false);
             globalvariables.zonaSegura = false;
             
             otro.transform.position = posA.position;
-            
-            InteriorCamera.enabled = false;
             CamaraSoloBloom.enabled = false;
-            PlayerCamera.enabled = true;
-            InteriorCamera.GetComponent<CamaraInterior>().enabled = false;
+            PlayerCamera.gameObject.SetActive(true);
             otro.transform.GetComponent<PlayerController>().inside = false;
             InteriorCamera.GetComponent<AudioSource>().Stop();
             PlayerCamera.GetComponent<AudioSource>().Play();

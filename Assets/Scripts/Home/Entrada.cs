@@ -29,26 +29,16 @@ public class Entrada : MonoBehaviour{
     public AuraLight referenciaAuraLight;
     public GameObject cosasInteriorNave; //Esto va a estar todo desactivado al principio para reducir drawCalls y los batches MUCHISIMO, y los fps nos lo agradecen
 
-    private void Start()
+    private void Awake()
     {
-        
-        CamaraSoloBloom.enabled = false;
-        cama.SetActive(false);
-        lampara.SetActive(false);
-        flor.SetActive(false);
-        radioGO1.SetActive(false);
-        radioGO2.SetActive(false);
-        radioGO3.SetActive(false);
-        radioGO4.SetActive(false);
-        InteriorCamera.GetComponent<Aura>().enabled = true;
-        InteriorCamera.GetComponent<CamaraInterior>().enabled = false; //Desactivo este script hasta que entre el player a la nave...
-    }                                                               //..si no esta cam sigue al player por mas que este desactivada.
+        cosasInteriorNave.SetActive(false);
+    }                                                              
 
     void OnTriggerEnter(Collider otro)
     {
         if (otro.transform.CompareTag("Player"))
         {
-            cosasInteriorNave.SetActive(true); 
+            cosasInteriorNave.SetActive(true); //activo todo apenas entro
             if (TiendaGlobal.INS.cama) //si compramos estas cosas activarlas con las particulas
             {
                 scriptDeExplosion.transform.position = insUno.position;
@@ -90,12 +80,12 @@ public class Entrada : MonoBehaviour{
             globalvariables.zonaSegura = true;
             
             otro.transform.position = posA.position;
-            
             referenciaAuraLight.enabled = true;
-            InteriorCamera.GetComponent<CamaraInterior>().enabled = true;
-            PlayerCamera.enabled = false;
-            InteriorCamera.enabled = true;
+            PlayerCamera.gameObject.SetActive(false);    
+            //IMPORTANTE:
+            //InteriorCamera.enabled = true; //Esto lo puedo comentar por que es hijo del obj vacio que activo mas arriba, pero la camara de abajo es hijo del hijo y no se va a activar de la misma forma.
             CamaraSoloBloom.enabled = true; // La camara del bloom siosi despues de la del interior asi llega a renderizar primero la de interior y DESPUES la del bloom
+
             otro.transform.GetComponent<PlayerController>().inside = true;
             InteriorCamera.GetComponent<AudioSource>().Play();
             PlayerCamera.GetComponent<AudioSource>().Stop();
