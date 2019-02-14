@@ -73,6 +73,14 @@
     <Compile Include="Assets\Aura\Editor\Helpers\MeshHelpers.cs" />
     <Compile Include="Assets\Aura\Editor\Helpers\PreviewRenderUtilityHelpers.cs" />
     <Compile Include="Assets\Aura\Editor\Statics\GuiStyles.cs" />
+    <Compile Include="Assets\Editor\AbstractPlayer.cs" />
+    <Compile Include="Assets\Editor\CompileListener.cs" />
+    <Compile Include="Assets\Editor\ElevatorSettings.cs" />
+    <Compile Include="Assets\Editor\EnginePlayer.cs" />
+    <Compile Include="Assets\Editor\IPlayer.cs" />
+    <Compile Include="Assets\Editor\NativePlayer.cs" />
+    <Compile Include="Assets\Editor\PlayerFactory.cs" />
+    <Compile Include="Assets\Editor\SoundLibrary.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\Editor\Actions\ActionData.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\Editor\Actions\ActionLog.cs" />
     <Compile Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\Editor\Actions\ActionSequence.cs" />

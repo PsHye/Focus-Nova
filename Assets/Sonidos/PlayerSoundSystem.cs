@@ -30,7 +30,7 @@ public class PlayerSoundSystem : MonoBehaviour {
 		}
 	}
 
-
+    //asdasdasdasda asdasdasdas asdasdas
 	void Picaso()
 	{
 		var azar = Mathf.RoundToInt(Random.Range(1,3));
