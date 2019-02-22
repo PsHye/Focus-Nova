@@ -78,7 +78,8 @@ public class Entrada : MonoBehaviour{
             }
             
             globalvariables.zonaSegura = true;
-            
+            globalvariables.aireRestante = 40f;
+
             otro.transform.position = posA.position;
             referenciaAuraLight.enabled = true;
             PlayerCamera.gameObject.SetActive(false);    

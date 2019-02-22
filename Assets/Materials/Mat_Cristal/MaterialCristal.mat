@@ -10,7 +10,7 @@ Material:
   m_Name: MaterialCristal
   m_Shader: {fileID: 4800000, guid: a93001c707f37844f88effc051d82891, type: 3}
   m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
-  m_LightmapFlags: 0
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -76,19 +76,23 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AO: 0
     - _BumpScale: 1
+    - _ChromaticAberration: 0.1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _Distortion: 2.3
     - _DstBlend: 10
     - _Emission: 1
     - _Float0: 1
+    - _Float2: 12.41
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 2
     - _OcclusionStrength: 1
+    - _Opacity: 0
     - _Parallax: 0.02
     - _Shininess: 0.03
     - _SmoothnessTextureChannel: 0

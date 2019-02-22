@@ -23,15 +23,12 @@ public class globalvariables : MonoBehaviour
     {
         if (!zonaSegura)
         {
-            aireRestante -= 0.01f;
-        }
-        else
-        {
-            aireRestante = 40f;
-        }
+           aireRestante -= 0.01f;
+        } 
+        
         
         crystalText.text = crystalCount.ToString();
-        toxicityText.text = Mathf.Round(aireRestante).ToString();
+        toxicityText.text = Mathf.RoundToInt(aireRestante).ToString();
         if (aireRestante <= 0)
         {
             aireRestante = 0;
