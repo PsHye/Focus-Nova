@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-	[Header("Herramientas")]
+    [Header("Referencias Cristales")]
+    public CrystalScript cristalScript;
+
+    [Header("Herramientas")]
 	public GameObject Pico;
 	public float PicoDelay = 1f;//Para que desactive el pico.
 
@@ -13,6 +16,7 @@ public class PlayerController : MonoBehaviour {
 	public float velocidadCaminar;
 	public float velocidadRotar;
     public bool inside;
+    bool puedePicar;
 
     [Header("Particula y donde spawnear")]
     public ParticleSystem particulaAlTocarCristal;
@@ -32,14 +36,18 @@ public class PlayerController : MonoBehaviour {
     //Componentes
     Animator anim;
 
+   
+
     void Start () 
 	{
 		anim = GetComponent<Animator>();
         Pico.SetActive(false);
         PicoDelay = Mathf.Clamp(0,0,1);
+        puedePicar = false;
 	}
 	void Update () 
 	{
+        #region MOVIMIENTO_DANI
         var Horizontal = Input.GetAxis("Horizontal");
 		var Vertical = Input.GetAxis("Vertical");
 
@@ -52,6 +60,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			transform.Rotate(new Vector3(0, Horizontal, 0) * velocidadRotar);
 		}
+        #endregion MOVIMIENTO_DANI
 
         if (PicoDelay >= 0)
 		{
@@ -61,18 +70,35 @@ public class PlayerController : MonoBehaviour {
 		{
             Pico.SetActive(false);
         }
-        if (Input.GetKeyDown("space")) //Como spawnear esta particula mas el shake de la camara, dejar aca hasta que temgamos al enemigo listo
+
+        if (Input.GetKeyDown("space") && !Pico.activeSelf && puedePicar) //Como spawnear esta particula mas el shake de la camara, dejar aca hasta que temgamos al enemigo listo
         {
+            //prueba ataque
             particulaAtaqueCristal.transform.position = prueba.position;
             particulaAtaqueCristal.transform.rotation = transform.rotation;
             particulaAtaqueCristal.Play();
             StartCoroutine(camaraShake.Shake(tiempoShake, fuerzaShake));
+            
+            //cosas del pico
+            Pico.SetActive(true);
+            cristalScript.Cantidad -= 10;
+            cristalScript.cantidadCristales();
+            anim.SetTrigger("Picaso");
+
+            particulaAlTocarCristal.transform.position = dondeSpawnearPart.position; //Play de particulas del golpe
+            particulaAlTocarCristal.Play();
+            particulaNumeroDeGolpe.transform.position = dondeSpawnearPart.position; //Play de particulas del numero del golpe
+            particulaNumeroDeGolpe.Play();
+            PicoDelay = 1;
+            
+            //Crystal contador
+            globalvariables.crystalCount += 10;
         }
     }
 
-	void OnTriggerStay(Collider otro)
-	{
-		if(otro.transform.CompareTag("crystal"))
+    /*void OnTriggerStay(Collider otro)
+	{                                                            //FORMA VIEJA
+		if(otro.transform.CompareTag("crystal"))                //ESTO ENTRABA CADA FRAME, CON LA FORMA NUEVA, ENTRA UNA VEZ Y SE OLVIDA, HASTA QUE SALE Y VUELVE A ENTRAR :)
 		{
 			if(Input.GetKeyDown(KeyCode.Space) && !Pico.activeSelf) //solo si esta desactivado podemos hacer todo esto - bran
 			{
@@ -89,5 +115,23 @@ public class PlayerController : MonoBehaviour {
                 globalvariables.crystalCount += 10;
             }
 		}
-	}
+	}*/
+
+    private void OnTriggerEnter(Collider other)     //FORMA NUEVA
+    {
+        if (other.transform.CompareTag("crystal"))
+        {
+            puedePicar = true;
+            cristalScript = other.GetComponent<CrystalScript>();
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.CompareTag("crystal"))
+        {
+            puedePicar = false;
+            cristalScript = null;
+        }
+    }
 }

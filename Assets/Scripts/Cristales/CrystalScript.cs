@@ -21,31 +21,31 @@ public class CrystalScript : MonoBehaviour {
         Fase4.SetActive(false);
     }
 	
-	void Update ()
-	{
-        switch(Cantidad)
-	    {
-		    case 160:
-                    Fase1.SetActive(true);
-                    break;
-		    case 120:
-                    Fase1.SetActive(false);
-                    Fase2.SetActive(true);
-            break;
-		    case 80:
-                    Fase2.SetActive(false);
-                    Fase3.SetActive(true);
-            break;
-		    case 30:
-                    Fase3.SetActive(false);
-                    Fase4.SetActive(true);
-            break;
-		    case 0:
-		        Destroy(gameObject);
+	
+    public void cantidadCristales()
+    {
+        switch (Cantidad)
+        {
+            case 160:
+                Fase1.SetActive(true);
+                break;
+            case 120:
+                Fase1.SetActive(false);
+                Fase2.SetActive(true);
+                break;
+            case 80:
+                Fase2.SetActive(false);
+                Fase3.SetActive(true);
+                break;
+            case 30:
+                Fase3.SetActive(false);
+                Fase4.SetActive(true);
+                break;
+            case 0:
+                Destroy(gameObject);
                 particulaSystem.Stop();
-                
-		    break;
-		
-	    }
+
+                break;
+        }
     }
 }

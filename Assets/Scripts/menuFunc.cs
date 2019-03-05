@@ -12,99 +12,37 @@ public class menuFunc : MonoBehaviour
     private bool isActive;
     public bool puedeMoverse;
 
-
+    bool puedeComprar;
     void Start() {
-        isActive = false;
-        Shop.SetActive(isActive);
-        Factory_1.SetActive(isActive);
+        puedeComprar = false;
     }
- 
+
     void Update()
     {
- 
+        if (Input.GetKeyDown("p") && puedeComprar)
+        {
+            Factory_1.SetActive(true);
+            
+        }
+        if (Factory_1.activeSelf && !puedeComprar)
+        {
+            Factory_1.SetActive(false);
+        }
     }
 
-    void OnTriggerStay(Collider other) {
-        
-        /*if (other.tag == "crystal")
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.CompareTag("factory"))
         {
-
-            Debug.Log("Toca crystal");
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                other.GetComponent<crytal>().Cantidad = other.GetComponent<crytal>().Cantidad - 10;
-
-                globalvariables.crystalCount += 10;
-            }
+            puedeComprar = true;
         }
-        */
-        if (other.tag == "home")
-        {
-            globalvariables.aireRestante = 40 + (shopmethods.Casco * 20);
-           
-
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                Shop.SetActive(!isActive);
-                isActive = !isActive;
-                if (isActive == true)
-                { 
-                    puedeMoverse = false;
-                }
-                else {
-                    puedeMoverse = true;
-                }
-            }
-        }
-        if (other.tag == "factory")
-        {
-            globalvariables.aireRestante = 40 + (shopmethods.Casco * 20);
-
-
-            if (Input.GetKeyDown(KeyCode.P))
-            {
-                Factory_1.SetActive(true);
-                isActive = !isActive;
-                if (isActive == true)
-                {
-                    puedeMoverse = false;
-                }
-                else
-                {
-                    puedeMoverse = true;
-                    Factory_1.SetActive(false);
-                    Factory_2.SetActive(false);
-                    //Factory_3.SetActive(!isActive);
-                }
-            }
-        }
-
-
-
-
-
-
-
-
-        /* void OnTriggerEnter(Collider other)
-         {
-             if(other.tag == "home")
-             {
-                 velocidadAuxiliar = velocidad;
-             }
-
-         }
-
-         void VoidOnTriggerExit(Collider other)
-         {
-             if (other.tag == "home")
-             {
-                 velocidad = velocidad + velocidadAuxiliar;
-             }
-
-         }*/
-
-
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.transform.CompareTag("factory"))
+        {
+            puedeComprar = false;
+        }
+    }
 }
