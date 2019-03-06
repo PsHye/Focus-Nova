@@ -9,24 +9,19 @@ public class menuFunc : MonoBehaviour
     public GameObject Factory_1;
     public GameObject Factory_2;
     //public GameObject Factory_3;
-    private bool isActive;
     public bool puedeMoverse;
+    
 
     bool puedeComprar;
     void Start() {
         puedeComprar = false;
     }
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetKeyDown("p") && puedeComprar)
+        if (!Factory_1.activeSelf)
         {
-            Factory_1.SetActive(true);
-            
-        }
-        if (Factory_1.activeSelf && !puedeComprar)
-        {
-            Factory_1.SetActive(false);
+            GetComponent<PlayerController>().enabled = true;
         }
     }
 
@@ -34,15 +29,16 @@ public class menuFunc : MonoBehaviour
     {
         if (other.transform.CompareTag("factory"))
         {
-            puedeComprar = true;
+            Factory_1.SetActive(true);
+            GetComponent<PlayerController>().enabled = false;
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    /*private void OnTriggerExit(Collider other)
     {
         if (other.transform.CompareTag("factory"))
         {
-            puedeComprar = false;
+           player.GetComponent<PlayerController>().enabled = true;
         }
-    }
+    }*/
 }
