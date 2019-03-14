@@ -19,12 +19,20 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _5454:
+        m_Texture: {fileID: 2800000, guid: f9a19241135f86c4d821ee4c61e0c447, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _TextureSample0:
         m_Texture: {fileID: 2800000, guid: 78e71b9e097c52e4cba00d81ed4dbe74, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample2:
         m_Texture: {fileID: 2800000, guid: ceb93779c4493e346946ea2579d51f74, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample3:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _crystal_single_alpha:
@@ -36,13 +44,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AO: 0.41
+    - _AO: 0.4
     - _ChromaticAberration: 0.3
+    - _Cutoff: 0.5
     - _Distortion: 1.13
     - _Float0: 0.27
-    - _Float1: 0.32
+    - _Float1: 0.46
     - _Float2: 0.77
-    - _Float3: 0.98
+    - _Float3: 0.13
     - _Opacity: 0.6
     - _TransAmbient: 0.289
     - _TransDirect: 0.821
@@ -53,5 +62,5 @@ Material:
     - __dirty: 0
     - _scale: 1
     m_Colors:
-    - _Color0: {r: 0, g: 0.31300896, b: 1, a: 1}
+    - _Color0: {r: 0, g: 0.3130088, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 0.7536868, a: 1}
