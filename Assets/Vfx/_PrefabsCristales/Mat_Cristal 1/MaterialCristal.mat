@@ -49,9 +49,10 @@ Material:
     - _Cutoff: 0.5
     - _Distortion: 1.13
     - _Float0: 0.27
-    - _Float1: 0.46
+    - _Float1: 2.08
     - _Float2: 0.77
     - _Float3: 0.13
+    - _Offset: -0.3
     - _Opacity: 0.6
     - _TransAmbient: 0.289
     - _TransDirect: 0.821
@@ -62,5 +63,5 @@ Material:
     - __dirty: 0
     - _scale: 1
     m_Colors:
-    - _Color0: {r: 0, g: 0.3130088, b: 1, a: 1}
+    - _Color0: {r: 0, g: 0.31300873, b: 1, a: 1}
     - _Color1: {r: 1, g: 0, b: 0.7536868, a: 1}

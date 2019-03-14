@@ -17,6 +17,11 @@ public class PlayerController : MonoBehaviour {
 	public float velocidadRotar;
     public bool inside;
     bool puedePicar;
+    bool anilloActivar;
+    public GameObject anillo;
+    public float distanciaMax;
+    public float distanciaMin;
+    float distanciaVerdadera;
 
     [Header("Particula y donde spawnear")]
     public ParticleSystem particulaAlTocarCristal;
@@ -44,7 +49,8 @@ public class PlayerController : MonoBehaviour {
         Pico.SetActive(false);
         PicoDelay = Mathf.Clamp(0,0,1);
         puedePicar = false;
-	}
+        anilloActivar = false;
+    }
 	void Update () 
 	{
         #region MOVIMIENTO_DANI
@@ -94,28 +100,17 @@ public class PlayerController : MonoBehaviour {
             //Crystal contador
             globalvariables.crystalCount += 10;
         }
-    }
-
-    /*void OnTriggerStay(Collider otro)
-	{                                                            //FORMA VIEJA
-		if(otro.transform.CompareTag("crystal"))                //ESTO ENTRABA CADA FRAME, CON LA FORMA NUEVA, ENTRA UNA VEZ Y SE OLVIDA, HASTA QUE SALE Y VUELVE A ENTRAR :)
-		{
-			if(Input.GetKeyDown(KeyCode.Space) && !Pico.activeSelf) //solo si esta desactivado podemos hacer todo esto - bran
-			{
-                Pico.SetActive(true);
-                otro.GetComponent<CrystalScript>().Cantidad -= 10;
-				anim.SetTrigger("Picaso");
-                
-                particulaAlTocarCristal.transform.position = dondeSpawnearPart.position; //Play de particulas del golpe
-                particulaAlTocarCristal.Play();
-                particulaNumeroDeGolpe.transform.position = dondeSpawnearPart.position; //Play de particulas del numero del golpe
-                particulaNumeroDeGolpe.Play();
-                PicoDelay = 1;
-                //dasdasd
-                globalvariables.crystalCount += 10;
+        if (anilloActivar)
+        {
+            distanciaVerdadera = Vector3.Distance(this.transform.position, anillo.transform.position);
+            if (distanciaVerdadera <= 9f)
+            {
+                anillo.GetComponent<Renderer>().material.SetFloat("Variante", Mathf.Lerp(0,1,RemapDistancia(distanciaVerdadera,0,1)));
+                print(distanciaVerdadera);
             }
-		}
-	}*/
+        }
+    }
+    
 
     private void OnTriggerEnter(Collider other)     //FORMA NUEVA
     {
@@ -123,6 +118,11 @@ public class PlayerController : MonoBehaviour {
         {
             puedePicar = true;
             cristalScript = other.GetComponent<CrystalScript>();
+        }
+        if (other.transform.CompareTag("Ring"))
+        {
+            anilloActivar = true;
+            print("asdad");
         }
     }
 
@@ -133,5 +133,11 @@ public class PlayerController : MonoBehaviour {
             puedePicar = false;
             cristalScript = null;
         }
+    }
+
+    float RemapDistancia(float minMaxViejo, float minNuevo, float maxNuevo)
+    {
+        
+        return 0;
     }
 }
