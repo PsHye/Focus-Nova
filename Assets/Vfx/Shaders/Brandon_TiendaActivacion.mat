@@ -37,7 +37,7 @@ Material:
     - _Float1: 1.57
     - _Float2: 1
     - _Intensidad: 2.46
-    - _Variante: 2
+    - _Variante: 0
     - __dirty: 0
     m_Colors:
     - _Color: {r: 0.18988895, g: 0, b: 1, a: 0}

@@ -10,6 +10,7 @@ public class EmpezarAnimRing : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         anim.SetBool("HizoTriggerEnter", false);
+        anim.SetBool("HizoTriggerExit", false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -17,6 +18,16 @@ public class EmpezarAnimRing : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.SetBool("HizoTriggerEnter", true);
+            anim.SetBool("HizoTriggerExit", false);
         } 
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            anim.SetBool("HizoTriggerEnter", false);
+            anim.SetBool("HizoTriggerExit", true);
+        }
     }
 }
