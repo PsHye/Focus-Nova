@@ -8,6 +8,7 @@ public class Salida : MonoBehaviour
     public Camera PlayerCamera;
     public Camera InteriorCamera;
     public Camera CamaraSoloBloom;
+    public Camera CamaraSoloBloomEXTERIOR;
     public GameObject cosasInteriorNave;
 
 
@@ -20,6 +21,7 @@ public class Salida : MonoBehaviour
             
             otro.transform.position = posA.position;
             CamaraSoloBloom.enabled = false;
+            CamaraSoloBloomEXTERIOR.gameObject.SetActive(true);
             PlayerCamera.gameObject.SetActive(true);
             otro.transform.GetComponent<PlayerController>().inside = false;
             InteriorCamera.GetComponent<AudioSource>().Stop();

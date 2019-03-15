@@ -9,6 +9,7 @@ public class Entrada : MonoBehaviour{
     public Camera PlayerCamera;
     public Camera InteriorCamera;
     public Camera CamaraSoloBloom;
+    public Camera CamaraSoloBloomEXTERIOR;
 
     [Header("Objetos Casa")]
     public GameObject cama;
@@ -82,6 +83,7 @@ public class Entrada : MonoBehaviour{
 
             otro.transform.position = posA.position;
             referenciaAuraLight.enabled = true;
+            CamaraSoloBloomEXTERIOR.gameObject.SetActive(false);
             PlayerCamera.gameObject.SetActive(false);    
             //IMPORTANTE:
             //InteriorCamera.enabled = true; //Esto lo puedo comentar por que es hijo del obj vacio que activo mas arriba, pero la camara de abajo es hijo del hijo y no se va a activar de la misma forma.

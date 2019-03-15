@@ -33,11 +33,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cutoff: 0.5
-    - _Float0: 4
+    - _Float0: 1.8
     - _Float1: 1.57
     - _Float2: 1
-    - _Intensidad: 2.5
-    - _Variante: 0
+    - _Intensidad: 2.46
+    - _Variante: 2
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0, g: 0.38155627, b: 1, a: 0}
+    - _Color: {r: 0.18988895, g: 0, b: 1, a: 0}
