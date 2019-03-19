@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Escena Menu y Demo/MenuPrincipal.unity
+- path: Assets/Escena Menu y Demo/Game nico backup.unity
   isLoaded: 1
   isActive: 1
