@@ -2,18 +2,20 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <LangVersion>latest</LangVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{86CC092D-AACB-2422-BD57-31BA479CFADD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
@@ -43,13 +45,6 @@
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
-  </PropertyGroup>
-  <PropertyGroup>
-    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
-    <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
-    <UnityVersion>2018.3.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -140,6 +135,8 @@
     <Compile Include="Assets\Scripts\globalvariables.cs" />
     <Compile Include="Assets\Scripts\Home\CamaraInterior.cs" />
     <Compile Include="Assets\Scripts\Home\Entrada.cs" />
+    <Compile Include="Assets\Scripts\Menu y Configuraciones\configuracionesScript.cs" />
+    <Compile Include="Assets\Scripts\Menu y Configuraciones\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\menuFunc.cs" />
     <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\ResizePanel.cs" />
@@ -194,8 +191,10 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_GrayscaleNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_StaticSwitchNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\Sobel.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ReflectOpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ATanOpNode.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FunctionOutputNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceCameraPos.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ATan2OpNode.shader" />
@@ -247,6 +246,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexTangentNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RoundOpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceLightPosNode.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\2Sided\2Sided.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_GetLocalVarNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Log2OpNode.shader" />
@@ -270,6 +270,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\Sprites\SimpleSprite\SimpleSprite.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Log10OpNode.shader" />
     <None Include="Assets\Fonts\Jupiter\LICENSE.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LengthOpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_WorldSpaceViewDirHlpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PosVertexDataNode.shader" />
@@ -336,16 +337,19 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SamplerNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\LowPolyWater\LowPolyWater.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\SimplePotionLiquid\SimpleGlass.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\SimpleGPUInstancing\SimpleGPUInstancing.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_PowerNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FractNode.shader" />
     <None Include="Assets\Aura\Shaders\Aura.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Templates\Unlit.shader" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DynamicAppendNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleRemainderNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ComponentMaskNode.shader" />
     <None Include="Assets\Aura\Shaders\Includes\Structs.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal01\StencilMask01.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\UISpriteFX\UISpriteFX.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\FilmGrain\Credits.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_RelayNode.shader" />
@@ -369,6 +373,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_BreakToComponentsNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\UnlitWithLightmap\UnlitWithLightmap.shader" />
     <None Include="Assets\Aura\Shaders\Includes\Noise.cginc" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Materials\UI-Default-No-Alpha.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_GammaToLinearNode.shader" />
     <None Include="Assets\Aura\Shaders\ComputeShaders\ComputeMaximumDepthComputeShader.compute" />
@@ -392,6 +397,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Substance2018\Readme.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TextureCoordinatesNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TriplanarProjection\TriplanarProjection.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FunctionInputNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\Particle Alpha Blend.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_CosTime.shader" />
@@ -405,6 +411,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SqrtOpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Dithering\DitheringFadeBlueNoise.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TimeNode.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DecodeViewNormalStereoHlpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_VertexIdVariableNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ObjectScaleNode.shader" />
@@ -415,6 +422,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Tessellation\Tessellation.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Smear\Smear.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\ParallaxMapping\ParallaxMappingIterations.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Templates\Legacy\UnlitLightmap.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\MultiPassDistortion\MultiPassDistortion.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\MultiPassDistortion\DoublePassUnlitTemplate.shader" />
@@ -435,7 +443,9 @@
     <None Include="Assets\Vfx\Particulas\EffectExamples\Magic Effects\Shaders\Ice.shader" />
     <None Include="Assets\Aura\Shaders\Shaders\Surface\AuraStandardAlphaBlended.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleTimeNode.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_ToggleSwitchNode.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal02\StencilDiffuse02.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\TemplateExamples\PostProcess\Sobel\Credits.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_LerpOp.shader" />
@@ -443,6 +453,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\AnimatedFire-ShaderFunction\AnimatedFire-ShaderFunction.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\UISpriteFX\UISpriteFX 3.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector2Node.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimpleMultiplyOpNode.shader" />
     <None Include="Assets\Aura\Shaders\ComputeShaders\Includes\OcclusionCulling.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\ReflectRefractSoapBubble\ReflectRefractSoapBubble.shader" />
@@ -460,6 +471,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCFlipBookUVAnimation.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_TFHCRemap.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\OrientationBasedSprite\OrientationBasedSprite.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\Dissolve Burn\Credits.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Water\Ground.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Transparency\Transparency.shader" />
@@ -477,6 +489,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\HighlightAnimated\Credits.txt" />
     <None Include="Assets\Aura\Shaders\Includes\AuraParticlesBase.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Community\EnvironmentGradient\MourEnvironmentGradient.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_SimplifiedFModOpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DdyOpNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_Vector3Node.shader" />
@@ -484,6 +497,7 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\Transmission\Transmission.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\StencilExample\Portals\Portal01\StencilDiffuse01.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_FaceVariableNode.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\Aura\Shaders\Includes\Common.cginc" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\CreatingTerrainsWithASE.txt" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Examples\Official\ReadFromAtlasTiled\ReadFromAtlasTiled.shader" />
@@ -492,25 +506,25 @@
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_NoiseGeneratorNode.shader" />
     <None Include="Assets\Vfx\_AmplifyShaderEditor\Plugins\EditorResources\Previews\Preview_DesaturateNode.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -707,9 +721,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.4f1/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="Vuforia.UnityExtensions">
-      <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.4f1/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.GoogleAudioSpatializer">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.4f1/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
     </Reference>
@@ -717,13 +728,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.4f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/brand/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/Algarrobo/Documents/GitHub/Focus-Nova/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.4f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -1072,7 +1083,6 @@
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

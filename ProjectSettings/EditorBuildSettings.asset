@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/GameNico.unity
-    guid: 4f84bb1fc118f474aacae7dc5134877f
+    path: Assets/Escena Menu y Demo/MenuPrincipal.unity
+    guid: e36baacf2a7d04144b3acc34f6a45825
+  - enabled: 1
+    path: Assets/Escena Menu y Demo/Game nico backup.unity
+    guid: 13cb4d90c5c106a4fb4b85ffe48428e4
   m_configObjects: {}
