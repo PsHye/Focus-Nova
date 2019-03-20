@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Escena Menu y Demo/MenuPrincipal.unity
+    path: Assets/Escena Menu y Demo/HERNAN.unity
     guid: e36baacf2a7d04144b3acc34f6a45825
   - enabled: 1
     path: Assets/Escena Menu y Demo/Game nico backup.unity
