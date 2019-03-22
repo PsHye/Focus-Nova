@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Escena Menu y Demo/Game nico backup.unity
+- path: Assets/Escena Menu y Demo/HERNAN.unity
   isLoaded: 1
   isActive: 1
