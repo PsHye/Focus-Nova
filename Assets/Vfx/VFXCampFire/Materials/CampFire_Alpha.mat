@@ -159,7 +159,7 @@ Material:
     - _Glossiness: 1
     - _GlossyReflections: 1
     - _Glow: 1.22
-    - _Glow_Intensity: 1
+    - _Glow_Intensity: 1.11
     - _Intensidad_Glow: 1.19
     - _LightingEnabled: 0
     - _Metallic: 0

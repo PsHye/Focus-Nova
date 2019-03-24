@@ -127,11 +127,16 @@
     <Compile Include="Assets\Character\cameraFollow.cs" />
     <Compile Include="Assets\Character\PlayerController.cs" />
     <Compile Include="Assets\EmpezarAnimRing.cs" />
+    <Compile Include="Assets\ENEMIGO\AI\AI\AIcontroller.cs" />
+    <Compile Include="Assets\ENEMIGO\AI\AI\AIvision.cs" />
     <Compile Include="Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\Scripts\Burbuja\Burbuja.cs" />
     <Compile Include="Assets\Scripts\Burbuja\SpawnSystem.cs" />
     <Compile Include="Assets\Scripts\ChangeColor.cs" />
+    <Compile Include="Assets\Scripts\Controller.cs" />
+    <Compile Include="Assets\Scripts\ControllerIK.cs" />
+    <Compile Include="Assets\Scripts\ControllerView.cs" />
     <Compile Include="Assets\Scripts\Cristales\CrystalScript.cs" />
     <Compile Include="Assets\Scripts\DragMe.cs" />
     <Compile Include="Assets\Scripts\DragPanel.cs" />
@@ -144,6 +149,7 @@
     <Compile Include="Assets\Scripts\Menu y Audio\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\menuFunc.cs" />
     <Compile Include="Assets\Scripts\PanelManager.cs" />
+    <Compile Include="Assets\Scripts\Pathview.cs" />
     <Compile Include="Assets\Scripts\ResizePanel.cs" />
     <Compile Include="Assets\Scripts\Salida.cs" />
     <Compile Include="Assets\Scripts\ScrollDetailTexture.cs" />
